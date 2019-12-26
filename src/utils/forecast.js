@@ -11,8 +11,10 @@ const forecast = (latitude, longitude, callback) => {
             callback(undefined, 
                 // tempreture: response.body.currently.temperature, 
                 // summary: response.body.daily.data[0].summary,
+              
                 response.body.daily.data[0].summary +  ' It is currently ' + response.body.currently.temperature + ' degree celcius tempreture.\n There is ' + response.body.currently.precipProbability + '% chances of rain.'
-            )
+               
+            );
         }
 
     });
